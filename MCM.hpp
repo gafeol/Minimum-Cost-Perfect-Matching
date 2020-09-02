@@ -1,6 +1,7 @@
 #ifndef MCM_H
 #define MCM_H
 
+#include "Graph.h"
 #include<bits/stdc++.h>
 using namespace std;
 
