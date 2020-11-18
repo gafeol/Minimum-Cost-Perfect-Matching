@@ -209,9 +209,7 @@ pair<double, vector<pair<int, int>>> MinimumCostPerfectMatching(int n, vector<tu
     Graph G(n);
     vector<double> cost(m);
     for(auto ar: arestas){
-        int i, j;
-        double c;
-        tie(i, j, c) = ar;
+        auto [i, j, c] = ar;
         G.AddEdge(i, j);
         cost[G.GetEdgeIndex(i, j)] = c;
     }
